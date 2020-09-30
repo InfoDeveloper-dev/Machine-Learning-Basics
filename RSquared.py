@@ -75,3 +75,12 @@ object_rsquared = Rsquared(y_actual, y_predicted)
 object_rsquared.display_list()
 R_squared_class = object_rsquared.calculating_rsquare()
 print("Output using class method is: {}".format(R_squared_class))
+"""
+There is another concept so called adjusted squaredR which is very important to know. Squared R will increase or change when one adds new variable to the regression \
+equation irrespective of whether such variable is important or not. But adjusted squaredR will only change if the added new variable or regressor is significant.
+Formulae to calculate adjusted squaredR  is as below:-
+adjusted_R_square = 1-[(1-R_squared)(n-1)/n-k-1]
+where n: number of samples or number of observations
+      k: numbers of independent variables or numbers of regressors
+      R_squared : Rsquared
+"""      
