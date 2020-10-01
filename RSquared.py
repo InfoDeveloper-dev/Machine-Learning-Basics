@@ -83,4 +83,13 @@ adjusted_R_square = 1-[(1-R_squared)(n-1)/n-k-1]
 where n: number of samples or number of observations
       k: numbers of independent variables or numbers of regressors
       R_squared : Rsquared
-"""      
+"""
+"""
+Some more material appending here:
+If one needs to check which of the independent variables are important or significiant for the regression equation, one needs to analyse below test
+    1.) calculate p value for each independent variable. If p-values comes out to be less than 0.05, such independent variable is significiant else not
+    2.) Suppose there are two independent variables or regressors or predictors value or input features have correlation equal to 1 and has very tight scatter plot
+        in the same direction, then one needs to choose one variable out of two as both are mirror image of each other.
+	2.1) In case of the problem raised in point 2, one has to go with the calculation of vairance inflation factor for each variable and the variable which
+	     has the maximum VIF has to be rejected.
+"""
